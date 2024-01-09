@@ -7,13 +7,13 @@ namespace Homework4
     {
         static void Main(string[] args)
         {
-            var drivingLicence = new DrivingLicence("Ukraine", "Olena", 4352, 1234, "25-09-2033");
+            /*var drivingLicence = new DrivingLicence("Ukraine", "Olena", 4352, 1234, "25-09-2033");
 
             bool isRaining = true;
             bool isCloudy = false;
             bool isSunny = true;
 
-            if (isRaining == true || isCloudy == true)
+            if (isRaining == true && isCloudy == true)
             {
                 Console.WriteLine("Take an umbrella");
             }
@@ -21,7 +21,7 @@ namespace Homework4
             {
                 Console.WriteLine("Take sunglasses");
             }
-            else if (isRaining == true || isSunny == true)
+            else if (isRaining == true && isSunny == true)
             {
                 Console.WriteLine("Take both an umbrella and sunglasses");
             }
@@ -60,11 +60,12 @@ namespace Homework4
             {
                 if (wholeNumbersArray2[i] % 2 == 0)
                 {
-                    evenNumbersList2.Add(i);
+                    //розібратись чому так, а не evenNumbersList2.Add(i);
+                    evenNumbersList2.Add(wholeNumbersArray2[i]);
                 }
                 else
                 {
-                    oddNumbersList2.Add(i);
+                    oddNumbersList2.Add(wholeNumbersArray2[i]);
                 }
             }
 
@@ -99,7 +100,12 @@ namespace Homework4
                 case Holidays.NewYearsDay:
                     Console.WriteLine("Decorate a Christmas tree!");
                     break;
-            }
+
+
+            }*/
+
+
+            
         }
     }
 }

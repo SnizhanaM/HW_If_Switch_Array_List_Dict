@@ -1,6 +1,6 @@
 ﻿
 
-namespace Homework4
+/*namespace Homework4
 {
     enum Holidays
     {
@@ -9,3 +9,4 @@ namespace Homework4
         NewYearsDay
     }
 }
+*/
