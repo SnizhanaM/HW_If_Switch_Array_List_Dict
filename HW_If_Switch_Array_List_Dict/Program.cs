@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HW_If_Switch_Array_List_Dict;
+using System;
 using System.Collections.Generic;
 
 namespace Homework4
@@ -105,7 +106,50 @@ namespace Homework4
             }*/
 
 
+            //HOMEWORK.December 29
+
+            //Task 1
+            int anyNumber = 0;
+
+            while (anyNumber < 10) 
+            { 
+                anyNumber++;
+                Console.WriteLine($"While value: {anyNumber}");
+            }
             
+            //Task 2
+            int anyNumber2 = 10;
+
+            while (anyNumber2 < 10)
+            {
+                anyNumber2++;
+                Console.WriteLine($"Value of the 2d while cycle: {anyNumber2}");
+            }
+
+            //Task 3
+            int anyNumber3 = 0;
+
+            do
+            {
+                Console.WriteLine($"DoWhile value: {anyNumber3}");
+                anyNumber3++;
+            }
+            while (anyNumber3 < 10);
+
+            //Task 4
+            int anyNumber4 = 10;
+            do
+            {
+                Console.WriteLine($"Value of the 2d DoWhile cycle: {anyNumber4}");
+                anyNumber4++;
+            }
+            while (anyNumber4 < 10);
+
+            //Task 5
+            var human = new Human();
+            human.GetHumanName(null);
+
+
         }
     }
 }
