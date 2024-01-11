@@ -1,5 +1,4 @@
-﻿using HW_If_Switch_Array_List_Dict;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace Homework4
@@ -109,7 +108,7 @@ namespace Homework4
             //HOMEWORK.December 29
 
             //Task 1
-            int anyNumber = 0;
+            /*int anyNumber = 0;
 
             while (anyNumber < 10) 
             { 
@@ -147,7 +146,7 @@ namespace Homework4
 
             //Task 5
             var human = new Human();
-            human.GetHumanName(null);
+            human.GetHumanName(null);*/
 
 
         }
