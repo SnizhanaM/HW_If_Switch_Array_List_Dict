@@ -1,5 +1,7 @@
-﻿using System;
+﻿using HW_If_Switch_Array_List_Dict;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Homework4
 {
@@ -148,7 +150,84 @@ namespace Homework4
             var human = new Human();
             human.GetHumanName(null);*/
 
+            //HOMEWORK. January 5. Task 1.
+
+            var program = new Program();
+            List<string> clothesTypes = new List<string> {"shirt", "t-shirt", "trousers", "coat", "jeans", "dress"};
+            program.GetClothes(clothesTypes);
+            List<string> nullIssue = new List<string> { null };
+            program.GetClothes(nullIssue);
+
+
+            //HOMEWORK. January 5. Task 2.
+
+            var honda = new Car();
+            honda.MakeOfCar = "accord";
+            honda.YearOfManufacture = 2012;
+
+            var volsvolkswagen = new Car();
+            volsvolkswagen.MakeOfCar = "Golf";
+            volsvolkswagen.YearOfManufacture = 2004;
+
+            var toyota = new Car();
+            toyota.MakeOfCar = "Camry";
+            toyota.YearOfManufacture = 1983;
+
+            var audi = new Car();
+            audi.MakeOfCar = "A8";
+            audi.YearOfManufacture = 1994;
+
+            var mercedes = new Car();
+            mercedes.MakeOfCar = "Mercedes-Benz GLE";
+            mercedes.YearOfManufacture = 2023;
+
+            var hyundai = new Car();
+            hyundai.MakeOfCar = "Cortina";
+            hyundai.YearOfManufacture = 1968;
+
+            List<Car> allCars = new List<Car>();
+            allCars.Add(honda);
+            allCars.Add(volsvolkswagen);
+            allCars.Add(audi);
+            allCars.Add(hyundai);
+            allCars.Add(mercedes);
+            allCars.Add(toyota);
+
+            List<Car> oldCars = new List<Car>();
+            List<Car> newCars = new List<Car>();
+            List<string> namesOfOldCars = new List<string>();
+
+            var oldCarsSelection = oldCars.Where(oldCar => oldCar.YearOfManufacture <= 2000);
+            var newCarsSelection = newCars.Where(newCar => newCar.YearOfManufacture > 2000);
+            var oldCarNames = allCars.Select(nameOfOldCar => nameOfOldCar.YearOfManufacture <= 2000);
+
+            Console.WriteLine(allCars);
+            Console.WriteLine(oldCarsSelection);
+            Console.WriteLine(newCarsSelection);
+            Console.WriteLine(oldCarNames);
+            
 
         }
+        
+        //HOMEWORK. January 5. Task 1.
+        public void GetClothes<T>(List<T> clothesTypes)
+        {
+            try
+            {
+                Console.WriteLine(clothesTypes[5]);
+            } 
+            catch (NullReferenceException ex) 
+            {
+                Console.WriteLine(ex);
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine(ex);
+            }
+           
+        }
+
+        
+
     }
 }
